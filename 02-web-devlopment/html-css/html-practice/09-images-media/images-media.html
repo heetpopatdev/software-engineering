@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Images and Media</title>
+  </head>
+  <body>
+    <h1>HTML Images and Media</h1>
+
+    <h2>Images</h2>
+
+    <p>
+      The img element is used to display an image on a webpage. The src
+      attribute specifies the location of the image that the browser should
+      load.
+    </p>
+    <img
+      src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+      alt="Computer motherboard"
+      width="600"
+    />
+
+    <h2>The src Attribute</h2>
+
+    <p>
+      The alt attribute provides alternative text for an image.It is useful when
+      an image cannot be displayed and helps people using screen readers
+      understand the purpose or content of the image.
+    </p>
+
+    <img
+      src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+      alt="Close-up view of a computer motherboard"
+      width="400"
+    />
+
+    <h2>Image width and Height</h2>
+
+    <p>
+      Width and height can be specified for an image. They provide the browser
+      with information about the intended dimensions of the image.
+    </p>
+
+    <img
+      src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+      alt="computer motherboard"
+      width="500"
+      height="300"
+    />
+
+    <h2>Figure and Figcaption</h2>
+
+    <p>
+      The figure element represent self-contained content such as an
+      image,diagram,illustraion or other media. The figcaption element provides
+      a caption describing the figure.
+    </p>
+
+    <figure>
+      <img
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+        alt="Computer motherboard with electronic components"
+        width="500"
+      />
+      <figcaption>
+        A computer motherboard containing electronic components.
+      </figcaption>
+    </figure>
+
+    <h2>Audio</h2>
+
+    <p>
+      The audio element allows audio content to embedded into a webpage. The
+      controls attribute provides controls that allow the user to play, pause,
+      and control the audio.
+    </p>
+
+    <audio controls>
+      <source src="media/sample-audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video</h2>
+
+    <p>
+      The video element allows video content to be embedded into a webpage. The
+      controls attribute provides playback controls to the user.
+    </p>
+
+    <video controls width="600">
+      <source src="media/sample-video.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+    </video>
+
+    <h2>Video Attributes</h2>
+
+    <p>
+      Video elements can use attributes such as controls, muted, loop, and
+      autoplay to control how the media behaves.
+    </p>
+
+    <video controls muted loop width="600">
+      <source src="media/sample-video.mp4" type="video/mp4" />
+
+      Your browser does not support the video element.
+    </video>
+
+    <h2>Embedding External Content</h2>
+
+    <p>
+      The iframe element can embed another webpage or supported external content
+      inside the current webpage.
+    </p>
+
+    <iframe
+      src="https://www.youtube.com/embed/KlfuFFGWw64"
+      width="600"
+      height="400"
+      title="Youtube website"
+    >
+    </iframe>
+  </body>
+</html>
