@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tables and Lists</title>
+  </head>
+  <body>
+    <h1>HTML Tables and Lists</h1>
+
+    <h2>HTML Tables</h2>
+
+    <p>
+      HTML tables are used to organize realted information into rows and
+      columns. They are useful when information needs to be compared or
+      displayed in a structured format.
+    </p>
+
+    <h3>Basic Table</h3>
+
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+      </tr>
+
+      <tr>
+        <td>Heet</td>
+        <td>22</td>
+        <td>MCA</td>
+      </tr>
+
+      <tr>
+        <td>Rahul</td>
+        <td>23</td>
+        <td>MCA</td>
+      </tr>
+
+      <tr>
+        <td>Ayush</td>
+        <td>22</td>
+        <td>BCA</td>
+      </tr>
+    </table>
+
+    <h3>Table Rows and Cells</h3>
+
+    <p>
+      The tr element represents a table row. The th element reperesents a
+      heading cell, while the td element represents normal data inside a table.
+    </p>
+
+    <h3>Colspan</h3>
+
+    <p>
+      The colspan attribute allows one cell to span across multiple columns.
+    </p>
+    <table border="1">
+      <tr>
+        <th colspan="2">Student Information</th>
+      </tr>
+
+      <tr>
+        <th>Name</th>
+        <th>Course</th>
+      </tr>
+
+      <tr>
+        <td>Heet</td>
+        <td>MCA</td>
+      </tr>
+    </table>
+
+    <h3>Rowspan</h3>
+
+    <p>The rowspan attribute allows one cell to span across multiple rows.</p>
+
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+      </tr>
+
+      <tr>
+        <td rowspan="2">Heet</td>
+        <td>HTML</td>
+      </tr>
+
+      <tr>
+        <td>CSS</td>
+      </tr>
+    </table>
+
+    <h2>Ordered Lists</h2>
+
+    <p>An ordered list is used when the order of the items matters.</p>
+
+    <ol>
+      <li>Open the browser</li>
+      <li>Enter the website address</li>
+      <li>Send the request</li>
+      <li>Receive the webpage</li>
+    </ol>
+
+    <h2>Unordered Lists</h2>
+
+    <p>
+      An unordered list is used when the ordered of the items does not matter.
+    </p>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+
+    <h2>Description Lists</h2>
+
+    <p>
+      A description list is useful when we have terms and their corresponding
+      descriptions.
+    </p>
+
+    <dl>
+      <dt>HTML</dt>
+      <dd>A markup language used to structure webpages.</dd>
+
+      <dt>CSS</dt>
+      <dd>A stylesheet language used to control presentation and apperance.</dd>
+
+      <dt>JavaScript</dt>
+      <dd>
+        A programming language used to add behavior and interactivity to
+        webpages.
+      </dd>
+    </dl>
+
+    <h2>Nested Lists</h2>
+
+    <p>
+      A nested list is a list placed inside another list. It is useful for
+      representing categories and subcategories.
+    </p>
+
+    <ul>
+      <li>
+        Frontend
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </li>
+      <li>
+        Backend
+        <ul>
+          <li>Node.js</li>
+          <li>Databases</li>
+          <li>APIs</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
