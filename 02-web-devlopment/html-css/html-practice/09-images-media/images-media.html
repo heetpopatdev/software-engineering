@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+        Content Security Policy:
+        Only allow resources from this website itself.
+        Data URLs are also allowed for images.
+    -->
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' ; img-src 'self' data:;"
+    />
     <title>HTML Images and Media</title>
   </head>
   <body>
@@ -120,5 +131,79 @@
       title="Youtube website"
     >
     </iframe>
+
+    <h2>Priority Hints</h2>
+
+    <p>
+      Priority Hints allow us to tell the browser which resources are more
+      important and should be loaded with higher or lower priority.
+    </p>
+
+    <h3>High Priority Image</h3>
+
+    <img
+      src="images/web.jpg"
+      alt="Web image"
+      fetchpriority="high"
+      width="600"
+    />
+
+    <p>
+      The fetchpriority attribute tells the browser that this image is important
+      and shoud be given higher loading priority.
+    </p>
+
+    <h3>Low Priority Image</h3>
+
+    <img
+      src="images/moon.jpg"
+      alt="moon image"
+      fetchpriority="low"
+      width="300"
+    />
+
+    <p>
+      A low-priority resource is less important, so the browser can choose to
+      load it later.
+    </p>
+
+    <h2>Content Security Policy(CSP)</h2>
+
+    <p>
+      Content Security policy is a browser security mechanism that controls
+      which sources a webpage is allowed to load resources from.
+    </p>
+
+    <h3>Example</h3>
+
+    <p>
+      This page uses CSP to allow images only from this website itself and from
+      data URLs.
+    </p>
+
+    <p>
+      If an image tries to load from an unapproved external website, the browser
+      will block it.
+    </p>
+
+    <img src="images/sky.jpg" alt="Image from our website" width="300" />
+
+    <!--
+        This external image is blocked by our CSP because
+        example.com is not included in img-src.
+    -->
+
+    <img
+      src="https://google.com/galaxy-image.jpg"
+      alt="External image"
+      width="300"
+    />
+
+    <h3>Why CSP Is Useful</h3>
+
+    <p>
+      CSP helps protect websites from loading unwanted or potentially dangerous
+      resources.
+    </p>
   </body>
 </html>
