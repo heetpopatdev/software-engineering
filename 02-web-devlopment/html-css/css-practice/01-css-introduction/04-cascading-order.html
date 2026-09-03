@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cascading Order</title>
+    <style>
+      /*
+            Both rules target the same h1.
+
+            The second rule comes later, so red wins over blue.
+        */
+
+      h1 {
+        color: blue;
+      }
+      h1 {
+        color: red;
+      }
+
+      /*
+            This paragraph demonstrates !important.
+
+            !important gives this declaration verey high priority.
+        */
+      p {
+        color: green !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Red wins because this rule comes later.</h1>
+
+    <!--
+        Inline CSS normally has higher priority than a normal stylesheet declaration.
+    -->
+    <h2 style="color: purple">Inline CSS has higher priority.</h2>
+
+    <!--
+        !important gives this declaration very high priority.
+    -->
+
+    <p>This paragraph is green because of !important.</p>
+  </body>
+</html>
