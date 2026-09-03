@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Practice</title>
+    <style>
+      /*
+        1. Simple Selectors
+        */
+
+      /*
+            Element Selectors:Selects every paragraph.
+        */
+      p {
+        color: #333;
+      }
+
+      /*
+            Class selector:selects elements with class="highlight".
+        */
+      .highlight {
+        background-color: yellow;
+      }
+
+      /*
+            ID selector:Selects the element with id="main-title".
+        */
+
+      #main-title {
+        color: blue;
+      }
+
+      /*
+        Universal selector:Selects every element.
+        */
+      * {
+        box-sizing: border-box;
+      }
+
+      /*
+      Grouping selector: Applies the same rule to multiple selectors.
+      */
+      h2,
+      h3 {
+        font-family: Arial, sans-serif;
+      }
+
+      /*
+      2. Combinator selectors
+      */
+
+      /*
+      Decendant combinator:Selects every p anywhere inside .container.
+      */
+      .container p {
+        color: green;
+      }
+
+      /*
+      Child combinator:Selects only p elements that are direct children of .container.
+      */
+      .container > p {
+        font-weight: bold;
+      }
+
+      /*
+      Next sibling:Selects the p immediately after h2.
+      */
+      .sibling-example h2 + p {
+        color: purple;
+      }
+
+      /*
+      Subsequent sibling:Selects all p siblings that come after the h2.
+      */
+
+      .sibling-example h2 ~ p {
+        text-decoration: underline;
+      }
+
+      /*
+        Attribute Selectors
+      */
+
+      /*
+      Attribute exists: Selects inputs that have a type attribute.
+      */
+      input[type] {
+        padding: 8px;
+      }
+
+      /*
+      Exact attribute value:Selects only email inputs.
+      */
+      input[type="email"] {
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-title">CSS Selectors</h1>
+
+    <h2>Simple Selectors</h2>
+
+    <p>This paragraph is selected by the element selector.</p>
+
+    <p class="highlight">This paragraph is selected by the class selector.</p>
+
+    <h3>Grouping Selector Example</h3>
+
+    <h2>Combination Selectors</h2>
+
+    <div class="container">
+      <!--Direct child paragraph.-->
+      <p>Direct child paragraph.</p>
+      <section>
+        <!--Descendant of .container, but NOT a direct child.-->
+
+        <p>Nested paragraph.</p>
+      </section>
+    </div>
+
+    <div class="sibling-example">
+      <h2>Sibling Example</h2>
+
+      <!--Immediately after h2-->
+
+      <p>First paragraph after h2.</p>
+
+      <!--Also comes after h2,but is not the immediate sibling-->
+
+      <p>Second paragraph after h2.</p>
+
+      <p>Third paragraph after h2.</p>
+    </div>
+
+    <h2>Attribute Selectors</h2>
+
+    <form action="">
+      <input type="text" placeholder="Your name" />
+      <br /><br />
+      <input type="email" placeholder="Your email" />
+    </form>
+  </body>
+</html>
