@@ -1,0 +1,98 @@
+/*
+1. Font Family
+*/
+
+/*
+font-family decides which typeface is used.
+
+Arial is the preferred font.
+sans-serif is the fallback.
+*/
+
+.font-family-example {
+  font-family: Arial, sans-serif;
+}
+
+/*
+2. Font Style
+*/
+
+/*
+italic makes the text italic.
+*/
+
+.font-family-example {
+  font-style: italic;
+}
+
+/*
+3. Font Size
+*/
+
+/*
+font-size controls how large the text is.
+*/
+
+.font-size-example {
+  font-size: 24px;
+}
+
+/*
+4.Font Weight
+*/
+
+/*
+700 creates a bold font weight.
+*/
+
+.font-weight-example {
+  font-weight: 700;
+}
+
+/*
+5. Font Shorthand
+*/
+
+/*
+Shorthand combines:
+
+font-style
+font-weight
+font-size
+font-family
+
+*/
+
+.font-shorthand-example {
+  font:
+    italic 600 24px Georgia,
+    serif;
+}
+
+/*
+6. Google Fonts
+*/
+
+/*
+    Poppin was loaded in the HTML file.
+
+    Now CSS can use it.
+*/
+
+.google-font-example {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/*
+7. Font Variant
+*/
+
+/*
+ small-caps displays lowercase letters
+ using smaller capital letters.
+*/
+
+.font-variant-example {
+  font-variant: small-caps;
+}
