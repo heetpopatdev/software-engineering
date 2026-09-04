@@ -1,0 +1,130 @@
+/*
+
+1. COLOR
+
+*/
+
+/* Changes the text color */
+.color-example {
+  color: blue;
+}
+
+/*
+
+2. DIRECTION
+
+*/
+
+/* Left-to-right text direction */
+.direction-example {
+  direction: ltr;
+}
+
+/* Right-to-left text direction */
+.rtl-example {
+  direction: rtl;
+}
+
+/*
+
+3. TEXT ALIGNMENT
+
+*/
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+/*
+
+4. TEXT DECORATION
+
+*/
+
+.underline {
+  text-decoration: underline;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+/*
+
+5. TEXT TRANSFORM
+
+*/
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/*
+
+6. TEXT SPACING
+
+*/
+
+/* Controls space between individual letters */
+.letter-spacing {
+  letter-spacing: 4px;
+}
+
+/* Controls space between words */
+.word-spacing {
+  word-spacing: 12px;
+}
+
+/*
+
+7. LINE HEIGHT
+
+*/
+
+/* Controls vertical space between lines */
+.line-height {
+  line-height: 2;
+}
+
+/*
+
+8. TEXT SHADOW
+
+*/
+
+/*
+    text-shadow values:
+
+    3px → horizontal offset
+    3px → vertical offset
+    5px → blur
+    gray → shadow color
+*/
+
+.text-shadow {
+  text-shadow: 3px 3px 5px gray;
+}

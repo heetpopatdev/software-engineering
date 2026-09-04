@@ -21,7 +21,7 @@ sans-serif is the fallback.
 italic makes the text italic.
 */
 
-.font-family-example {
+.font-style-example {
   font-style: italic;
 }
 
