@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+}
+h1 {
+  text-align: center;
+}
+
+section {
+  margin-top: 40px;
+}
+
+.box {
+  padding: 20px;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+}
+
+.named {
+  background-color: red;
+}
+
+.hex {
+  background-color: #2563eb;
+}
+
+.rgb {
+  background-color: rgb(16, 185, 129);
+}
+
+.rgba {
+  background-color: rgba(168, 85, 247, 0.5);
+  color: black;
+}
+.hsl {
+  background-color: hsl(35, 90%, 50%);
+}
+.hsla {
+  background-color: hsla(330, 80%, 60%, 0.6);
+  color: black;
+}
+.background-color {
+  background-color: lightblue;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.background-image {
+  background-image: url(background.jpg);
+
+  background-position: center;
+
+  background-size: cover;
+
+  color: white;
+  padding: 80px 20px;
+  border-radius: 10px;
+}
+
+.gradient {
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.position-example {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+
+  padding: 80px 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.attachment-section {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  color: white;
+  padding: 40px;
+}
+
+.scroll-space {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.opacity-card {
+  background-color: blue;
+  color: white;
+  opacity: 0.5;
+
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.rgba-card {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+
+  padding: 30px;
+  border-radius: 10px;
+}
