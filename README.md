@@ -43,7 +43,7 @@ software-engineering/
 ├── 04-devops/
 │
 ├── 05-dsa/
-│   └── java/
+│   └── cpp/
 │
 ├── 06-system-design/
 │
