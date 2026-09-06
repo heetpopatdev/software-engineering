@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+}
+
+section {
+  margin-top: 40px;
+}
+
+.box-model-example {
+  width: 300px;
+  height: 150px;
+
+  padding: 30px;
+
+  border: 5px solid blue;
+
+  margin: 30px;
+
+  box-shadow: 5px 5px 10px gray;
+
+  background-color: lightblue;
+}
+
+.padding-example {
+  background-color: lightblue;
+
+  padding: 30px;
+}
+
+.margin-example {
+  background-color: lightgreen;
+
+  margin: 30px;
+}
+
+.size-example {
+  width: 300px;
+  height: 150px;
+
+  background-color: lightcoral;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-example {
+  padding: 20px;
+
+  border: 4px solid black;
+}
+
+.outline-example {
+  padding: 20px;
+
+  border: 2px solid black;
+
+  outline: 4px solid blue;
+}
+
+.shadow-example {
+  padding: 30px;
+
+  background-color: white;
+
+  box-shadow: 0px 5px 15px gray;
+}
+
+.percent-container {
+  width: 100%;
+
+  background-color: lightgray;
+}
+
+.percentage-box {
+  width: 80%;
+
+  padding: 20px;
+
+  background-color: steelblue;
+  color: white;
+}
+
+html {
+  font-size: 16px;
+}
+
+.rem-example {
+  font-size: 2rem;
+}
+
+.em-parent {
+  font-size: 20px;
+}
+
+.em-child {
+  /*
+    Here 1.5 * 20px = 30px
+    */
+  font-size: 1.5em;
+}
+
+.viewport-example {
+  /* 50vw = 50% of viewport width */
+
+  width: 50vw;
+  height: 20vh;
+
+  background-color: purple;
+  color: white;
+
+  padding: 20px;
+}
+
+.calc-example {
+  width: calc(100% - 1000px);
+
+  padding: 20px;
+
+  background-color: lightblue;
+}
+
+.min-example {
+  width: min(90%, 500px);
+
+  padding: 20px;
+
+  background-color: lightgreen;
+}
+
+.max-example {
+  width: max(300px, 50%);
+
+  padding: 20px;
+
+  background-color: lightcoral;
+}
+
+.clamp-example {
+  /*
+
+    Minimum: 2rem
+    Preferred: 5vw
+    Maximum: 4rem
+
+    The text can grow/shrink with the viewport but stays within the limits.
+
+    */
+  font-size: clamp(2rem, 5vw, 4rem);
+}
