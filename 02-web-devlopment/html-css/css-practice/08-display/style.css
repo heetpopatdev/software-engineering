@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+}
+
+section {
+  margin-top: 40px;
+}
+
+.block-box {
+  display: block;
+
+  width: 300px;
+
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.inline-box {
+  display: inline;
+
+  /*
+  Width and height do not behave like a normal block box here.
+  */
+
+  background-color: lightgreen;
+
+  padding: 10px;
+}
+
+.inline-block-box {
+  display: inline-block;
+
+  width: 120px;
+  height: 80px;
+
+  margin: 5px;
+  padding: 20px;
+
+  background-color: lightcoral;
+}
+
+.none-box {
+  /*
+    Completly removes the element from the layout.
+    */
+  display: none;
+
+  background-color: red;
+  color: white;
+
+  padding: 20px;
+}
+
+.hidden-box {
+  /*
+        Element becomes invisible, but its space remains.
+    */
+  visibility: hidden;
+
+  background-color: purple;
+  color: white;
+
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+}
+
+.flex-container div {
+  padding: 30px;
+
+  background-color: lightblue;
+}
+
+.grid-container {
+  display: grid;
+
+  /*
+    Create 3 equal columns.
+  */
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.grid-container div {
+  padding: 30px;
+
+  background-color: lightgreen;
+}
