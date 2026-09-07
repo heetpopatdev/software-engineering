@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Positioning & More</h1>
+    <section>
+      <h2>Position</h2>
+      <div class="static-box">Static</div>
+      <div class="relative-box">Relative</div>
+      <div class="absolute-parent">
+        Parent
+        <div class="absolute-box">Absolute</div>
+      </div>
+    </section>
+    <div class="fixed-button">Help</div>
+    <section>
+      <h2 class="sticky-heading">Sticky Heading</h2>
+      <p>Scroll the page to see sticky positioning.</p>
+      <div class="long-content">Scroll down.</div>
+    </section>
+    <section>
+      <h2>Z-Index</h2>
+      <div class="z-container">
+        <div class="z-box-one">Box 1</div>
+        <div class="z-box-two">Box 2</div>
+      </div>
+    </section>
+    <section>
+      <h2>CSS Specificity</h2>
+      <p id="special-text" class="special">
+        ID wins over calss and element selector.
+      </p>
+    </section>
+    <section>
+      <h2>Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Meet</td>
+            <td>Backend Developer</td>
+            <td>2 Years</td>
+          </tr>
+          <tr>
+            <td>Sarah</td>
+            <td>Frontend Developer</td>
+            <td>3 Years</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Lists</h2>
+      <h3>Unordered List</h3>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Lear HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+      </ol>
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dt>Structures web pages.</dt>
+        <dt>CSS</dt>
+        <dd>Styles web pages.</dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Image Filters</h2>
+      <img class="filtered-image" src="image.jpg" alt="Random 3d image" />
+    </section>
+  </body>
+</html>
