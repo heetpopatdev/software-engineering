@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+}
+
+section {
+  margin: 80px 0px;
+}
+
+.transition-button {
+  padding: 15px 25px;
+
+  background-color: blue;
+  color: white;
+
+  border: none;
+
+  /* Make background-color change smooth.*/
+
+  transition: background-color 0.5s;
+}
+
+.transition-button:hover {
+  background-color: black;
+}
+
+.scale-box {
+  width: 120px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: lightblue;
+
+  /* Smoothly animate the tranform.*/
+  transition: transform 0.3s;
+}
+
+.scale-box:hover {
+  /* Make the box 1.2 times larger.*/
+  transform: scale(1.2);
+}
+
+.rotate-box {
+  width: 120px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: lightgreen;
+
+  transition: transform 0.9s;
+}
+
+.rotate-box:hover {
+  transform: rotate(45deg);
+}
+
+.translate-box {
+  width: 120px;
+  height: 80px;
+
+  padding: 20px;
+
+  background-color: lightcoral;
+
+  transition: transform 0.3s;
+}
+
+.translate-box:hover {
+  /* Move the element 50px upward. */
+
+  transform: translateY(-50px);
+}
+
+@keyframes moveBox {
+}
+
+.animated-box {
+  width: 120px;
+  height: 80px;
+
+  padding: 20px;
+
+  background-color: orange;
+
+  /*
+    animation-name
+    animation-duration
+    animation-iteration-count
+  */
+  animation: moveBox 10s infinite;
+}
