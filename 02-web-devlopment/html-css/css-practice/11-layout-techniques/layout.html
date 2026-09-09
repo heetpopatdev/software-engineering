@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layout Techniques</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Layout Techniques</h1>
+    <section>
+      <h2>Normal Flow</h2>
+      <div class="flow-box">Box 1</div>
+      <div class="flow-box">Box 2</div>
+      <div class="flow-box">Box 3</div>
+    </section>
+    <section>
+      <h2>Floating Elements</h2>
+      <img
+        class="float-image"
+        src="https://picsum.photos/150/150"
+        alt="Example image for float practice"
+      />
+      <p>
+        This text flows around the floated image.Float was traditionally used
+        for layouts and is still useful for text wrapping.
+      </p>
+      <div class="clear-float"></div>
+    </section>
+    <section>
+      <h2>Multicolumn Layout</h2>
+      <div class="columns">
+        CSS allows long text to be divided into multiple columns. This can be
+        useful for newspaper-style articles, magazines, documentation and other
+        text-heavy layouts.
+      </div>
+    </section>
+    <section>
+      <h2>Flexbox</h2>
+      <div class="flex-container">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+      </div>
+    </section>
+    <section>
+      <h2>Flex Direction</h2>
+      <div class="flex-column">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+      </div>
+    </section>
+    <section>
+      <h2>Grid</h2>
+      <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+    </section>
+  </body>
+</html>
