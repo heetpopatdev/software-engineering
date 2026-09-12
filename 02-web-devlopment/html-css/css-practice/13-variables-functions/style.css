@@ -1,0 +1,59 @@
+/* Variables declared here can be reused across the page */
+:root {
+  --main-color: #2563eb;
+  --text-color: #1f2937;
+  --page-space: 24px;
+  --card-space: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  background-color: #f3f4f6;
+}
+
+.page {
+  /*  Leave 24px on each side, but never exceed 900px. */
+  width: min(calc(100% - 2 * var(--page-space)), 900px);
+  margin: 40px auto;
+}
+
+h1 {
+  /* Responsive font: minimum 24px, preferred 4vw, maximum 40px.*/
+  font-size: clamp(24px, 4vw, 40px);
+  color: var(--main-color);
+}
+
+.intro {
+  line-height: 1.6;
+}
+
+.card {
+  background-color: white;
+  padding: var(--card-space);
+  margin-top: var(--page-space);
+  border: 2px solid var(--main-color);
+  border-radius: 12px;
+}
+
+button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 6px;
+}
+
+/* On narrow screens, reuduce the page's side spacing. */
+
+@media (max-width: 500px) {
+  :root {
+    --page-space: 14px;
+    --card-space: 16px;
+  }
+}
