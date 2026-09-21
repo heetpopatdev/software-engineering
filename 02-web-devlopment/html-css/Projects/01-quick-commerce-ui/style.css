@@ -91,3 +91,27 @@ header {
   background-color: #ff8c00;
   font-weight: bold;
 }
+
+.bannerSection {
+  margin: auto;
+  max-width: 1280px;
+}
+
+.bannerSection img {
+  width: 100%;
+}
+
+.orderBanner {
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.orderBannerItems {
+  flex-basis: 28%;
+  margin: 1%;
+}
+
+.orderBannerItems img {
+  width: 100%;
+}

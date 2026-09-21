@@ -33,5 +33,13 @@
     justify-content: center;
     gap: 40px;
     z-index: 1000;
+    background-color: white;
+  }
+  .bannerSection {
+    display: none;
+  }
+  .orderBanner {
+    padding: 10px;
+    flex-direction: column;
   }
 }
