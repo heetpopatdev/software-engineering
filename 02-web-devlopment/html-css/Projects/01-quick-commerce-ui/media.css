@@ -32,7 +32,6 @@
     margin-right: 0;
     justify-content: center;
     gap: 40px;
-    z-index: 1000;
     background-color: white;
   }
   .bannerSection {
@@ -41,5 +40,8 @@
   .orderBanner {
     padding: 10px;
     flex-direction: column;
+  }
+  .categoryItems {
+    flex-basis: 25%;
   }
 }

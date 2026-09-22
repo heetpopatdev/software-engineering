@@ -115,3 +115,44 @@ header {
 .orderBannerItems img {
   width: 100%;
 }
+
+.categorySection {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categoryItems {
+  flex-basis: 10%;
+}
+
+.categoryItems img {
+  width: 100%;
+}
+
+.productRow {
+  margin: 30px 0px;
+  width: 100%;
+  display: flex;
+}
+
+.productItems {
+  flex-basis: 15%;
+  border: 1px solid #ccc;
+}
+.productImg {
+  text-align: center;
+  padding: 15px;
+}
+
+.productImg p {
+  background-color: #f8f8f8;
+  display: flex;
+  width: 60px;
+  justify-content: center;
+  padding: 2px;
+  align-items: center;
+  font-size: 12px;
+  text-align: left;
+}
