@@ -12,11 +12,11 @@ This project focuses on recreating a modern grocery delivery experience with res
 
 ### Product Section
 
-![Swiftly Products](screenshots/products.png)
+![Swiftly Products](screenshots/desktop-products.png)
 
 ### Mobile Responsive Design
 
-![Swiftly Mobile](screenshots/mobile-responsive.png)
+![Swiftly Mobile](screenshots/mobile.png)
 
 ## ✨ Features
 
