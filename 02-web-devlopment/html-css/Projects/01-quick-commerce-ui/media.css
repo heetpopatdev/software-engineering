@@ -50,4 +50,25 @@
   .productSection {
     padding: 30px 10px;
   }
+  footer {
+    padding-top: 0px;
+  }
+  .footer-mid-row1 {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .useFulLinks2 {
+    flex-wrap: wrap;
+  }
+
+  .useFulLinks2 ul {
+    flex-basis: 50%;
+  }
+  .footer-mid-row3 {
+    padding: 0px 10px;
+  }
+  .footer-mid-row2 {
+    gap: 20px;
+    flex-direction: column;
+  }
 }

@@ -3,6 +3,7 @@
   padding: 0px;
   font-family: sans-serif;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 header {
@@ -147,7 +148,7 @@ header {
 
 .productItems {
   flex-basis: 15%;
-  box-shadow: 0px 0px 10px 2px #ccc;
+  box-shadow: 0px 0px 10px 2px #fcfcfc;
   border: 1px solid #ccc;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -206,6 +207,7 @@ footer {
 .footer-mid-row1 {
   width: 100%;
   display: flex;
+  gap: 40px;
 }
 
 .footer-mid-row1-left {
@@ -225,4 +227,71 @@ footer {
 .useFulLinks ul {
   flex-basis: 33%;
   list-style: none;
+}
+.useFulLinks ul li a {
+  font-size: 14px;
+  display: block;
+  color: rgb(102, 102, 102);
+  margin-bottom: 15px;
+}
+.categoriesHeadingRow {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+.categoriesHeadingRow a {
+  color: #328839;
+}
+.useFulLinks2 {
+  display: flex;
+}
+.useFulLinks2 ul {
+  flex-basis: 33%;
+  list-style: none;
+}
+.useFulLinks2 ul li a {
+  font-size: 14px;
+  display: block;
+  color: rgb(102, 102, 102);
+  margin-bottom: 15px;
+}
+.footer-mid-row3 {
+  padding: 10px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(102, 102, 102);
+}
+.footer-mid-row2 {
+  background-color: #fcfcfc;
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+.footer-mid-row2 p {
+  flex-basis: 40%;
+  font-size: 14px;
+  text-align: center;
+}
+.appIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-basis: 30%;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.socialLinks i {
+  width: 40px;
+  height: 40px;
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
