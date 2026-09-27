@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How JavaScript Runs</title>
+  </head>
+  <body>
+    <h1>How Javascript Runs</h1>
+
+    <h2>Before Code Runtime</h2>
+
+    <table border="1" cellpadding="20">
+      <tr>
+        <td>Code File</td>
+        <td>-></td>
+        <td>Parse</td>
+        <td>-></td>
+        <td>Syntax Tree</td>
+      </tr>
+    </table>
+    <h2>↓</h2>
+    <table border="1" cellpadding="20">
+      <tr>
+        <td>JIT Compliler</td>
+      </tr>
+    </table>
+    <h2>↓</h2>
+    <table border="1" cellpadding="20">
+      <tr>
+        <td>Byte Code</td>
+        <td>-></td>
+        <td>Machine Code</td>
+      </tr>
+    </table>
+    <h2>↓</h2>
+    <table border="1" cellpadding="20">
+      <tr>
+        <td>Code Execution</td>
+      </tr>
+    </table>
+
+    <script>
+      let x = 10;
+      let y = 20;
+
+      console.log(x + y);
+    </script>
+  </body>
+</html>
