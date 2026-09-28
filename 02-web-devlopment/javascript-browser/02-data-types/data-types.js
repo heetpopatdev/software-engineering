@@ -65,3 +65,46 @@ console.log(typeof product);
 console.log(product.name);
 console.log(product.price);
 console.log(product.available);
+
+// 9. Array
+
+let fruits = ["Apple", "Banana", "Orange"];
+
+console.log(fruits);
+console.log(typeof fruits);
+
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits.length);
+
+
+// 10. Date
+
+let today = new Date();
+
+console.log(today);
+console.log(typeof today);
+
+
+// 11. String with multiple values
+
+let firstName = "Heet";
+let lastName = "Popat";
+
+let fullName = firstName + " " + lastName;
+
+console.log(fullName);
+console.log(typeof fullName);
+
+
+// 12. Type conversion
+
+let marks = "90";
+
+console.log(marks);
+console.log(typeof marks);
+
+let numberMarks = Number(marks);
+
+console.log(numberMarks);
+console.log(typeof numberMarks);
