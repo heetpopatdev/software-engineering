@@ -192,3 +192,61 @@ console.log("5 power 2:", 5 ** 2);
 // End
 
 console.log("Expression and Operators completed!");
+
+// Bitwise Operators
+
+// Bitwise And
+console.log("AND:", 5 & 3);
+
+// Bitwise Or
+console.log("OR:", 5 | 3);
+
+// Bitwise Xor
+console.log("XOR:", 5 ^ 3);
+
+// Bitwise Not
+console.log("NOT:", ~5);
+
+// Left Shift
+console.log("Left Shift", 5 << 1);
+
+// Right Shift
+console.log("Right Shift", 10 >> 1);
+
+// Unsigned right Shift
+console.log("Unsigned right shift", 10 >>> 1);
+
+//  BigInt Operators
+
+let bigA = 100n;
+let bigB = 20n;
+
+//Addition
+console.log("BigInt Addition:", bigA + bigB);
+
+//Subtraction
+console.log("BigInt Subtraction:", bigA - bigB);
+
+//Multiplication
+console.log("BigInt Multiplication:", bigA * bigB);
+
+//Division
+console.log("BigInt Division:", bigA / bigB);
+
+//Remainder
+console.log("BigInt Remainder:", bigA / bigB);
+
+// Power
+console.log("BigInt Power:", 2n ** 3n);
+
+// BigInt Comparison
+
+console.log("Strict Comparison:", 10n === 10);
+console.log("Loose Comparison:", 10n == 10);
+console.log("Greater Than", 10n > 5);
+
+// BigInt With Large Numbers
+
+let hugeNumber = 123456789012345678901234567890n;
+
+console.log("Huge Number:", hugeNumber);
