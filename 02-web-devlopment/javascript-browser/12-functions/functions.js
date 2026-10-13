@@ -41,7 +41,7 @@ console.log(totalCost);
 Return the result of calling 'makeTea'
 */
 function makeTea(typeOfTea) {
-  return "maketea: ${typeOfTea}";
+  return `maketea: ${typeOfTea}`;
 }
 
 function processTeaOrder(teaFunction) {
