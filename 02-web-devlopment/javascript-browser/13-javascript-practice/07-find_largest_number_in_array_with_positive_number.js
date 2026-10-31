@@ -1,3 +1,8 @@
+/*
+Qs5. Find the largest number in an array with only positive numbers.
+*/
+
+
 let arr = [-1, 2, 3, 4, 5, 6, 7, 8, 10];
 
 let largest = arr[0];
