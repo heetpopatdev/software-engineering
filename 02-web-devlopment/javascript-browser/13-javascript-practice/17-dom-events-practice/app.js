@@ -103,7 +103,7 @@ btn.addEventListener("dblclick", function (event) {
 });
  */
 //Keyboard events
-let inp = document.querySelector("input");
+/* let inp = document.querySelector("input");
 
 inp.addEventListener("keydown", function (event) {
   console.log("code = ", event.code); // ArrowUp(U), ArrowDown(D), ArrowLeft(L), ArrowRight(R)
@@ -115,12 +115,85 @@ inp.addEventListener("keydown", function (event) {
     console.log("Character moves left");
   } else if (event.code == "KeyR") {
     console.log("character moves right");
-  }
-  /* console.log(event.key);
+  } */
+/* console.log(event.key);
   console.log(event.code); */
-  //   console.log("Key was pressed");
-});
+//   console.log("Key was pressed");
+// });
 
 /* inp.addEventListener("keyup", function () {
   console.log("Key was released");
 }); */
+
+//Form Events
+
+/* let form = document.querySelector("form");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  console.dir(form); */
+
+/*  let inp = document.querySelector("input");
+  console.dir(inp);
+  console.log(inp.value); */
+
+/* let user = document.querySelector("#user");
+  let pass = document.querySelector("#pass");
+
+  console.log(user.value);
+  console.log(pass.value);
+
+  alert(`Hi ${user.value}, your password is set to ${pass.value}`); */
+/* 
+  let user = this.elements[0];
+  let pass = this.elements[1];
+
+  console.log(user.value);
+  console.log(pass.value);
+
+  alert(`Hi ${user.value}, your password is set to ${pass.value}`);
+ */
+// });
+
+/* let user = document.querySelector("#user");
+
+user.addEventListener("change", function () {
+  console.log("input changed");
+  console.log("final value =", user.value);
+});
+
+user.addEventListener("input", function () {
+  console.log("input event");
+  console.log("final value =", user.value);
+});
+ */
+/* 
+let inp = document.querySelector("#text");
+let p = document.querySelector("p");
+
+inp.addEventListener("input", function () {
+  console.log(inp.value);
+  p.innerText = inp.value;
+});
+ */
+
+//Practice Questions
+
+/* Q1:- Try out following events in Event Listener on your own:
+- mouseout
+- keypress
+- Scroll
+- load
+[Use MDN for help]
+ */
+let box = document.querySelector("div");
+
+box.addEventListener("mouseout", function () {
+  box.style.backgroundColor = "green";
+});
+
+let para = document.querySelector("p");
+
+para.addEventListener("keydown", function (event) {
+  console.log("You pressed: ", event.key);
+});
