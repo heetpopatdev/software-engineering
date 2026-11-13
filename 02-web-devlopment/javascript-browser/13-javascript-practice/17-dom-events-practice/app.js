@@ -186,7 +186,11 @@ inp.addEventListener("input", function () {
 - load
 [Use MDN for help]
  */
-let box = document.querySelector("div");
+/* let box = document.querySelector("div");
+
+box.addEventListener("mouseover", function () {
+  box.style.backgroundColor = "yellow";
+});
 
 box.addEventListener("mouseout", function () {
   box.style.backgroundColor = "green";
@@ -196,4 +200,48 @@ let para = document.querySelector("p");
 
 para.addEventListener("keydown", function (event) {
   console.log("You pressed: ", event.key);
+});
+
+window.addEventListener("scroll", function () {
+  console.log("Page scrolling!");
+});
+
+window.addEventListener("load", function () {
+  console.log("Website completely loaded!");
+});
+ */
+/* Qs2. Create a button on the page using JavaScript. Add an event listener to the button
+that changes the button’s color to green when it is clicked */
+
+/* let btn = document.createElement("button");
+
+btn.innerText = "Click Me";
+
+document.body.append(btn);
+
+btn.addEventListener("click", function () {
+  btn.style.backgroundColor = "green";
+}); */
+/* 
+Qs3. Create an input element on the page with a placeholder ”enter your name” and an
+H2 heading on the page inside HTML.
+The purpose of this input element is to enter a user’s name so it should only input
+letters from a-z, A-Z and space (all other characters should not be detected).
+Whenever the user inputs their name, their input should be dynamically visible inside
+the heading.
+[Please note that no other character apart from the allowed characters should be
+visible in the heading] */
+
+let inp = document.querySelector("#username");
+let heading = document.querySelector("#heading");
+
+inp.addEventListener("input", function () {
+  //here only english letter A-Z and a-z  allowed.
+  let cleanName = inp.value.replace(/[^a-zA-Z]/g, "");
+
+  // if any unwanted characters is there then remove it from input itself
+  inp.value = cleanName;
+
+  //
+  heading.innerText = cleanName;
 });
